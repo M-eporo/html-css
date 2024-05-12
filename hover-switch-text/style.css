@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+a {
+  display: block;
+  position: relative;
+  color: #fff;
+  background-color: #0cf;
+  height: 3em;
+  width: 12em;
+  border-radius: calc(infinity * 1px);
+  overflow: hidden;
+}
+
+span{
+  position: absolute;
+  inset: 0;
+  display:grid;
+  place-items: center;
+  transition: transform 0.2s;
+}
+
+a:hover span:nth-child(1){
+  transform: translate(0, -100%);
+}
+
+span:nth-of-type(2) {
+  
+  transform: translate(0, 100%);
+}
+
+a:hover span:nth-child(2) {
+  transform: translate(0);
+}
