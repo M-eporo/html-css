@@ -1,0 +1,82 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  object-fit: cover;
+}
+
+.container{
+  position: relative;
+  width: 100%;
+}
+
+.container > div {
+  width: 100%;
+  
+}
+
+/*.first {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+*/
+
+/*
+.second {
+  margin-top: 60.83333333vw;
+}
+*/
+
+/*
+.third {
+  padding: 100px 200px;
+}
+*/
+
+.fivth {
+  position: relative;
+  height: 5000px;
+  margin: 70px 0;
+  padding: 2em;
+  /*background: repeating-linear-gradient(
+    -45deg, #fafafa, #fafafa 10px, #aaa 10px, #aaa 20px);
+  background-image: url("./image/TOP-Carouselgroup4.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  filter: blur(5px);*/
+  z-index: 2;
+}
+
+.fivth::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 5000px;
+  background-image: url("./image/TOP-Carouselgroup4.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.sixth {
+  background-color: #fff;
+  margin: 70px 0;
+  padding: 2em;
+}
