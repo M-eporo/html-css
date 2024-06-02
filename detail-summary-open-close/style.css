@@ -1,0 +1,19 @@
+@charset "UTF-8";
+details {
+  width: 50%;
+  margin: 0.5rem 0;
+  border: 1px solid #000;
+  border-radius: 1rem;
+  text-align: center;
+}
+summary {
+  padding: 1rem 1.5rem;
+}
+.inner {
+  background-color: #cacaca;
+  
+}
+img {
+  width: 320px;
+  height: 320px;
+}
