@@ -1,0 +1,33 @@
+@charset "UTF-8";
+body{
+  margin: 0;
+  padding: 0;
+}
+section {
+  position: relative;
+}
+section:first-child {
+  height: 300px;
+  background-color: lightblue;
+}
+section + section {
+  background-color: lightblue;
+}
+.custom-shape-divider-top-1717337985 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.custom-shape-divider-top-1717337985 svg {
+  position: relative;
+  display: block;
+  width: calc(106% + 1.3px);
+  height: 248px;
+}
+
+.custom-shape-divider-top-1717337985 .shape-fill {
+  fill: lightblue;
+}
