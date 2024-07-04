@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.parent {
+  width: 50%;
+  aspect-ratio: 1/1;
+  border: 1px solid #000;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: x proximity;*/
+}
+.child {
+  min-width: 100%;
+  scroll-snap-align: center;
+  aspect-ratio: 1/1;
+}
+
+
+
