@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+  height: 300vh;
+  margin: 0;
+  padding: 0;
+}
+#square {
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  width: 20%;
+  aspect-ratio: 1 / 1;
+  border-bottom: 5px solid crimson;
+  background-color: lightgreen;
+  animation: square;
+  animation-timeline: scroll(nearest y);
+}
+@keyframes square {
+  to{
+    transform: rotate(0.5turn);
+  }
+}
+#circle {
+  position: absolute;
+  top: 130%;
+  left: 30%;
+  width: 30%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border-bottom: 5px solid crimson;
+  background-color: lightgreen;
+  animation: circle forwards;
+  animation-timeline: view(40% 40%);
+}
+@keyframes circle {
+  to{
+    background-color: #000;
+  }
+}
