@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Example</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <p id="text" class="text">AAAAAA</p>
+    <button type="button" id="button">ボタン</button>
+  </div>
+  <script>
+    const target = document.getElementById('text');
+    const animation = target.getAnimations()[0];
+    
+    document.getElementById('button').addEventListener('click', () => {
+      if(animation.playState === 'running'){
+        animation.pause();
+      }else{
+        animation.play();
+      }
+    });
+    
+  </script>
+</body>
+</html>
